@@ -8,15 +8,19 @@
 
       <a-assets>
         <a-sky src="assets/41073561590_e6518def27_k.jpg"></a-sky>
+        <img id="sky1" src="assets/41073561590_e6518def27_k.jpg">
+        <img id="icecream" src="assets/alexander-grey-5djh4Yb-2zI-unsplash.jpg">
+        <img id="cone" src="assets/engin-akyurt-cdeecwsXGDI-unsplash.jpg">
+        <img id="sand" src="assets/daniel-straub-n5HOJGtYt4Q-unsplash.jpg">
       </a-assets>
 
 
-
-      <img id="boxTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+      <a-sky src="#sky1" radius="30"></a-sky>
+      <a-plane src="#sand" position="0 0 -4" rotation="-90 0 0" width="4" height="4" ></a-plane>
+      <a-cone src="#cone" position="2 1.25 -5" radius-bottom="0.5" radius-top="0" height="2" color="#FFC65D" rotation="1 1 180"></a-cone>
+      <a-sphere src="#icecream"position="2 2.5 -5" radius="0.6" color="#EF2D5E"></a-sphere>
+      <a-box position="0 0.5 -3" rotation="0 0 0" width="1" height="0.1" depth="2" color="#4CC3D9"></a-box>
+      <a-box position="0 0.85 -4.2" rotation="45 0 0" width="1" height="0.1" depth="1" color="#4CC3D9"></a-box>
     </a-scene>
   </body>
 </html>
