@@ -11,13 +11,24 @@
         <img id="ground" src="assets/rocky_terrain_02_diff_4k.jpg">
         <a-asset-item id="chessBoard" src="assets/chess_set_4k.obj"></a-asset-item>
         <a-asset-item id="tree" src="assets/large+tree+low+poly.obj"></a-asset-item>
+        <a-asset-item id="table" src="assets/painted_wooden_table_4k.obj"></a-asset-item>
+        <a-asset-item id="chair" src="assets/painted_wooden_chair_02_4k.obj"></a-asset-item>
+        <img id="tex1" src="assets/painted_wooden_table_diff_4k.jpg">
+        <img id="tex2" src="assets/painted_wooden_chair_02_diff_4k.jpg">
+        <img id="tex3" src="assets/tree_small_02_leaves_diff_4k.png">
       </a-assets>
 
+      
       <a-sky src="assets/Night Sky.png"></a-sky>
-
       <a-plane src="#ground" position="0 0 0" rotation="-90 0 0" width="50" height="50" color="#7BC8A4"></a-plane>
-      <a-obj-model src="#tree" scale="0.5 0.5 0.5" position="2 0 -3"></a-obj-model>
-      <a-obj-model src="#tree" scale="0.5 0.5 0.5" position="-4 0 -1"></a-obj-model>
+      <a-obj-model src="#tree" scale="0.5 0.5 0.5" position="2 0 -7" material="src: #tex3"></a-obj-model>
+      <a-obj-model src="#tree" scale="0.5 0.5 0.5" position="-6 0 -7" material="src: #tex3"></a-obj-model>
+      <a-obj-model src="#table" scale="1 1 1" position="0 0 -2.1" rotation="0 90 0" material="src: #tex1"></a-obj-model>
+      <a-obj-model src="#chair" scale="1 1 1" position="-0.5 0 -1.6" rotation="0 90 0" material="src: #tex2 "></a-obj-model> 
+      <a-obj-model src="#chair" scale="1 1 1" position="-0.5 0 -2.6" rotation="0 90 0" material="src: #tex2 "></a-obj-model> 
+      <a-obj-model src="#chair" scale="1 1 1" position="0.5 0 -1.6" rotation="0 260 0" material="src: #tex2 "></a-obj-model> 
+      <a-obj-model src="#chair" scale="1 1 1" position="0.5 0 -2.6" rotation="0 260 0" material="src: #tex2 "></a-obj-model>
+      <a-obj-model src="#chair" scale="1 1 1" position="0 0 -3.4" rotation="0 0 0" material="src: #tex2 "></a-obj-model>
 
     </a-scene>
   </body>
